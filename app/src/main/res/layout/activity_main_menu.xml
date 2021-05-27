@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newLoopButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="251dp"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/splash_logo" />
+
+    <Button
+        android:id="@+id/newLoopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="New Project" />
+
+    <Button
+        android:id="@+id/loadLoopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newLoopButton"
+        android:layout_marginStart="-120dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@id/newLoopButton"
+        android:text="Load Project" />
+
+</RelativeLayout>

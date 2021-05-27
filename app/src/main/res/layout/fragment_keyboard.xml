@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.KeyboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.chibde.visualizer.BarVisualizer
+                android:id="@+id/visualizerInKeyboard"
+                android:layout_width="match_parent"
+                android:layout_height="128sp" />
+
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/HorizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--region OPTIONAL OCTAVES-->
+                <!--region Octave -2 Buttons-->
+                <!--region White Keys-->
+                <!--region
+            <Button
+                android:id="@+id/keyCMinus2"
+                style="@style/KeyboardWhiteKey" />
+
+            <Button
+                android:id="@+id/keyDMinus2"
+                android:layout_toEndOf="@+id/keyCMinus2"
+                android:layout_marginStart="2dp"
+                style="@style/KeyboardWhiteKey" />
+
+            <Button
+                android:id="@+id/keyEMinus2"
+                android:layout_toEndOf="@+id/keyDMinus2"
+                android:layout_marginStart="2dp"
+                style="@style/KeyboardWhiteKey" />
+
+            <Button
+                android:id="@+id/keyFMinus2"
+                android:layout_toEndOf="@+id/keyEMinus2"
+                android:layout_marginStart="2dp"
+                style="@style/KeyboardWhiteKey" />
+
+            <Button
+                android:id="@+id/keyGMinus2"
+                android:layout_toEndOf="@+id/keyFMinus2"
+                android:layout_marginStart="2dp"
+                style="@style/KeyboardWhiteKey" />
+
+            <Button
+                android:id="@+id/keyAMinus2"
+                android:layout_toEndOf="@+id/keyGMinus2"
+                android:layout_marginStart="2dp"
+                style="@style/KeyboardWhiteKey" />
+
+            <Button
+                android:id="@+id/keyBMinus2"
+                android:layout_toEndOf="@+id/keyAMinus2"
+                android:layout_marginStart="2dp"
+                style="@style/KeyboardWhiteKey" />
+                endregion-->
+
+                <!--region Black Keys-->
+                <!--region
+            <Button
+                android:id="@+id/keyCHMinus2"
+                android:layout_toEndOf="@+id/keyCMinus2"
+                style="@style/KeyboardBlackKey" />
+
+            <Button
+                android:id="@+id/keyEBMinus2"
+                android:layout_toEndOf="@+id/keyDMinus2"
+                style="@style/KeyboardBlackKey" />
+
+            <Button
+                android:id="@+id/keyFHMinus2"
+                android:layout_toEndOf="@+id/keyFMinus2"
+                style="@style/KeyboardBlackKey" />
+
+            <Button
+                android:id="@+id/keyGHMinus2"
+                android:layout_toEndOf="@+id/keyGMinus2"
+                style="@style/KeyboardBlackKey" />
+
+            <Button
+                android:id="@+id/keyBBMinus2"
+                android:layout_toEndOf="@+id/keyAMinus2"
+                style="@style/KeyboardBlackKey" />
+                endregion-->
+                <!--endregion-->
+
+                <!--region Octave -1 Buttons-->
+                <!--region White Keys-->
+                <!--region
+                <Button
+                    android:id="@+id/keyCMinus1"
+                    android:layout_toEndOf="@+id/keyBMinus2"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyDMinus1"
+                    android:layout_toEndOf="@+id/keyCMinus1"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyEMinus1"
+                    android:layout_toEndOf="@+id/keyDMinus1"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyFMinus1"
+                    android:layout_toEndOf="@+id/keyEMinus1"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyGMinus1"
+                    android:layout_toEndOf="@+id/keyFMinus1"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyAMinus1"
+                    android:layout_toEndOf="@+id/keyGMinus1"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyBMinus1"
+                    android:layout_toEndOf="@+id/keyAMinus1"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+                endregion-->
+
+                <!--region Black Keys-->
+                <!--region
+                <Button
+                    android:id="@+id/keyCHMinus1"
+                    android:layout_toEndOf="@+id/keyCMinus1"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyEBMinus1"
+                    android:layout_toEndOf="@+id/keyDMinus1"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyFHMinus1"
+                    android:layout_toEndOf="@+id/keyFMinus1"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyGHMinus1"
+                    android:layout_toEndOf="@+id/keyGMinus1"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyBBMinus1"
+                    android:layout_toEndOf="@+id/keyAMinus1"
+                    style="@style/KeyboardBlackKey" />
+                endregion-->
+                <!--endregion-->
+
+                <!--region Octave 0 Buttons-->
+                <!--region White Keys-->
+                <!--region
+                <Button
+                    android:id="@+id/keyC0"
+                    android:layout_toEndOf="@+id/keyBMinus1"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyD0"
+                    android:layout_toEndOf="@+id/keyC0"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyE0"
+                    android:layout_toEndOf="@+id/keyD0"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyF0"
+                    android:layout_toEndOf="@+id/keyE0"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyG0"
+                    android:layout_toEndOf="@+id/keyF0"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyA0"
+                    android:layout_toEndOf="@+id/keyG0"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyB0"
+                    android:layout_toEndOf="@+id/keyA0"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+                endregion-->
+
+                <!--region Black Keys-->
+                <!--region
+                <Button
+                    android:id="@+id/keyCH0"
+                    android:layout_toEndOf="@+id/keyC0"
+                    style="@style/KeyboardBlackKey" />
+                <Button
+                    android:id="@+id/keyEB0"
+                    android:layout_toEndOf="@+id/keyD0"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyFH0"
+                    android:layout_toEndOf="@+id/keyF0"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyGH0"
+                    android:layout_toEndOf="@+id/keyG0"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyBB0"
+                    android:layout_toEndOf="@+id/keyA0"
+                    style="@style/KeyboardBlackKey" />
+                endregion-->
+                <!--endregion-->
+
+                <!--region Octave 1 Buttons-->
+                <!--region White Keys-->
+                <!--region
+                <Button
+                    android:id="@+id/keyC1"
+                    android:layout_toEndOf="@+id/keyB0"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyD1"
+                    android:layout_toEndOf="@+id/keyC1"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyE1"
+                    android:layout_toEndOf="@+id/keyD1"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyF1"
+                    android:layout_toEndOf="@+id/keyE1"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyG1"
+                    android:layout_toEndOf="@+id/keyF1"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyA1"
+                    android:layout_toEndOf="@+id/keyC1"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyB1"
+                    android:layout_toEndOf="@+id/keyA1"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+                endregion-->
+
+                <!--region Black Keys-->
+                <!--region
+                <Button
+                    android:id="@+id/keyCH1"
+                    android:layout_toEndOf="@+id/keyC1"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyEB1"
+                    android:layout_toEndOf="@+id/keyD1"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyFH1"
+                    android:layout_toEndOf="@+id/keyF1"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyGH1"
+                    android:layout_toEndOf="@+id/keyG1"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyBB1"
+                    android:layout_toEndOf="@+id/keyA1"
+                    style="@style/KeyboardBlackKey" />
+                endregion-->
+                <!--endregion-->
+
+                <!--region Octave 2 Buttons-->
+                <!--region White Keys-->
+                <!--region
+                <Button
+                    android:id="@+id/keyC2"
+                    android:layout_toEndOf="@+id/keyB1"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyD2"
+                    android:layout_toEndOf="@+id/keyC2"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyE2"
+                    android:layout_toEndOf="@+id/keyD2"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyF2"
+                    android:layout_toEndOf="@+id/keyE2"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyG2"
+                    android:layout_toEndOf="@+id/keyF2"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyA2"
+                    android:layout_toEndOf="@+id/keyG2"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyB2"
+                    android:layout_toEndOf="@+id/keyA2"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+                endregion-->
+
+                <!--region Black Keys-->
+                <!--region
+                <Button
+                    android:id="@+id/keyCH2"
+                    android:layout_toEndOf="@+id/keyC2"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyEB2"
+                    android:layout_toEndOf="@+id/keyD2"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyFH2"
+                    android:layout_toEndOf="@+id/keyF2"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyGH2"
+                    android:layout_toEndOf="@+id/keyG2"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyBB2"
+                    android:layout_toEndOf="@+id/keyA2"
+                    style="@style/KeyboardBlackKey" />
+                endregion-->
+                <!--endregion-->
+                <!--endregion-->
+
+                <!--region Octave 3 Buttons-->
+                <!--region White Keys-->
+                <Button
+                    android:id="@+id/keyC3"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyD3"
+                    android:layout_toEndOf="@+id/keyC3"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyE3"
+                    android:layout_toEndOf="@+id/keyD3"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyF3"
+                    android:layout_toEndOf="@+id/keyE3"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyG3"
+                    android:layout_toEndOf="@+id/keyF3"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyA3"
+                    android:layout_toEndOf="@+id/keyG3"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyB3"
+                    android:layout_toEndOf="@+id/keyA3"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+                <!--endregion-->
+
+                <!--region Black Keys-->
+                <Button
+                    android:id="@+id/keyCH3"
+                    android:layout_toEndOf="@+id/keyC3"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyEB3"
+                    android:layout_toEndOf="@+id/keyD3"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyFH3"
+                    android:layout_toEndOf="@+id/keyF3"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyGH3"
+                    android:layout_toEndOf="@+id/keyG3"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyBB3"
+                    android:layout_toEndOf="@+id/keyA3"
+                    style="@style/KeyboardBlackKey" />
+                <!--endregion-->
+                <!--endregion-->
+
+                <!--region Octave 4 Buttons-->
+                <!--region White Keys-->
+                <Button
+                    android:id="@+id/keyC4"
+                    android:layout_toEndOf="@+id/keyB3"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyD4"
+                    android:layout_toEndOf="@+id/keyC4"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyE4"
+                    android:layout_toEndOf="@+id/keyD4"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyF4"
+                    android:layout_toEndOf="@+id/keyE4"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyG4"
+                    android:layout_toEndOf="@+id/keyF4"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyA4"
+                    android:layout_toEndOf="@+id/keyG4"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyB4"
+                    android:layout_toEndOf="@+id/keyA4"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+                <!--endregion-->
+
+                <!--region Black Keys-->
+                <Button
+                    android:id="@+id/keyCH4"
+                    android:layout_toEndOf="@+id/keyC4"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyEB4"
+                    android:layout_toEndOf="@+id/keyD4"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyFH4"
+                    android:layout_toEndOf="@+id/keyF4"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyGH4"
+                    android:layout_toEndOf="@+id/keyG4"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyBB4"
+                    android:layout_toEndOf="@+id/keyA4"
+                    style="@style/KeyboardBlackKey" />
+                <!--endregion-->
+                <!--endregion-->
+
+                <!--region Octave 5 Buttons-->
+                <!--region White Keys-->
+                <Button
+                    android:id="@+id/keyC5"
+                    android:layout_toEndOf="@+id/keyB4"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyD5"
+                    android:layout_toEndOf="@+id/keyC5"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyE5"
+                    android:layout_toEndOf="@+id/keyD5"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyF5"
+                    android:layout_toEndOf="@+id/keyE5"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyG5"
+                    android:layout_toEndOf="@+id/keyF5"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyA5"
+                    android:layout_toEndOf="@+id/keyG5"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyB5"
+                    android:layout_toEndOf="@+id/keyA5"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+                <!--endregion-->
+
+                <!--region Black Keys-->
+                <Button
+                    android:id="@+id/keyCH5"
+                    android:layout_toEndOf="@+id/keyC5"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyEB5"
+                    android:layout_toEndOf="@+id/keyD5"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyFH5"
+                    android:layout_toEndOf="@+id/keyF5"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyGH5"
+                    android:layout_toEndOf="@+id/keyG5"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyBB5"
+                    android:layout_toEndOf="@+id/keyA5"
+                    style="@style/KeyboardBlackKey" />
+                <!--endregion-->
+                <!--endregion-->
+
+                <!--region Octave 6 Buttons-->
+                <!--region White Keys-->
+                <Button
+                    android:id="@+id/keyC6"
+                    android:layout_toEndOf="@+id/keyB5"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyD6"
+                    android:layout_toEndOf="@+id/keyC6"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyE6"
+                    android:layout_toEndOf="@+id/keyD6"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyF6"
+                    android:layout_toEndOf="@+id/keyE6"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyG6"
+                    android:layout_toEndOf="@+id/keyF6"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyA6"
+                    android:layout_toEndOf="@+id/keyG6"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyB6"
+                    android:layout_toEndOf="@+id/keyA6"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+                <!--endregion-->
+
+                <!--region Black Keys-->
+                <Button
+                    android:id="@+id/keyCH6"
+                    android:layout_toEndOf="@+id/keyC6"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyEB6"
+                    android:layout_toEndOf="@+id/keyD6"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyFH6"
+                    android:layout_toEndOf="@+id/keyF6"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyGH6"
+                    android:layout_toEndOf="@+id/keyG6"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyBB6"
+                    android:layout_toEndOf="@+id/keyA6"
+                    style="@style/KeyboardBlackKey" />
+                <!--endregion-->
+                <!--endregion-->
+
+                <!--region Octave 7 Buttons-->
+                <!--region White Keys-->
+                <Button
+                    android:id="@+id/keyC7"
+                    android:layout_toEndOf="@+id/keyB6"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyD7"
+                    android:layout_toEndOf="@+id/keyC7"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyE7"
+                    android:layout_toEndOf="@+id/keyD7"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyF7"
+                    android:layout_toEndOf="@+id/keyE7"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyG7"
+                    android:layout_toEndOf="@+id/keyF7"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyA7"
+                    android:layout_toEndOf="@+id/keyG7"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyB7"
+                    android:layout_toEndOf="@+id/keyA7"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+                <!--endregion-->
+
+                <!--region Black Keys-->
+                <Button
+                    android:id="@+id/keyCH7"
+                    android:layout_toEndOf="@+id/keyC7"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyEB7"
+                    android:layout_toEndOf="@+id/keyD7"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyFH7"
+                    android:layout_toEndOf="@+id/keyF7"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyGH7"
+                    android:layout_toEndOf="@+id/keyG7"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyBB7"
+                    android:layout_toEndOf="@+id/keyA7"
+                    style="@style/KeyboardBlackKey" />
+                <!--endregion-->
+                <!--endregion-->
+
+                <!--region OPTIONAL OCTAVE-->
+                <!--region Octave 8 Buttons-->
+                <!--region White Keys-->
+                <!--region
+                <Button
+                    android:id="@+id/keyC8"
+                    android:layout_toEndOf="@+id/keyB7"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyD8"
+                    android:layout_toEndOf="@+id/keyC8"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyE8"
+                    android:layout_toEndOf="@+id/keyD8"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyF8"
+                    android:layout_toEndOf="@+id/keyE8"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyG8"
+                    android:layout_toEndOf="@+id/keyF8"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyA8"
+                    android:layout_toEndOf="@+id/keyG8"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+
+                <Button
+                    android:id="@+id/keyB8"
+                    android:layout_toEndOf="@+id/keyA8"
+                    android:layout_marginStart="2dp"
+                    style="@style/KeyboardWhiteKey" />
+                endregion-->
+
+                <!--region Black Keys-->
+                <!--region
+                <Button
+                    android:id="@+id/keyCH8"
+                    android:layout_toEndOf="@+id/keyC8"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyEB8"
+                    android:layout_toEndOf="@+id/keyD8"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyFH8"
+                    android:layout_toEndOf="@+id/keyF8"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyGH8"
+                    android:layout_toEndOf="@+id/keyG8"
+                    style="@style/KeyboardBlackKey" />
+
+                <Button
+                    android:id="@+id/keyBB8"
+                    android:layout_toEndOf="@+id/keyA8"
+                    style="@style/KeyboardBlackKey" />
+                endregion-->
+                <!--endregion-->
+                <!--endregion-->
+
+            </RelativeLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</FrameLayout>

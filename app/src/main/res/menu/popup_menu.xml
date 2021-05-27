@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/keyboard"
+        android:icon="@drawable/keyboard"
+        android:title="Keyboard" />
+    <item android:id="@+id/drums"
+        android:icon="@drawable/drums"
+        android:title="Drums" />
+    <item android:id="@+id/audioRecorder"
+        android:icon="@drawable/microphone"
+        android:title="Audio Recorder" />
+</menu>

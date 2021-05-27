@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/trackFragment">
+
+    <fragment
+        android:id="@+id/trackFragment"
+        android:name="com.samsung.myproject.fragments.TrackFragment"
+        android:label="fragment_track"
+        tools:layout="@layout/fragment_track" >
+        <action
+            android:id="@+id/action_trackFragment_to_keyboardFragment"
+            app:destination="@id/keyboardFragment" />
+        <action
+            android:id="@+id/action_trackFragment_to_drumFragment"
+            app:destination="@id/drumsFragment" />
+        <action
+            android:id="@+id/action_trackFragment_to_audioRecorderFragment"
+            app:destination="@id/audioRecorderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/keyboardFragment"
+        android:name="com.samsung.myproject.fragments.KeyboardFragment"
+        android:label="fragment_keyboard"
+        tools:layout="@layout/fragment_keyboard" >
+        <action
+            android:id="@+id/action_keyboardFragment_to_trackFragment"
+            app:destination="@id/trackFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drumsFragment"
+        android:name="com.samsung.myproject.fragments.DrumsFragment"
+        android:label="fragment_drum"
+        tools:layout="@layout/fragment_drums" >
+        <action
+            android:id="@+id/action_drumFragment_to_trackFragment"
+            app:destination="@id/trackFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/audioRecorderFragment"
+        android:name="com.samsung.myproject.fragments.AudioRecorderFragment"
+        android:label="fragment_audio_recorder"
+        tools:layout="@layout/fragment_audio_recorder" >
+        <action
+            android:id="@+id/action_audioRecorderFragment_to_trackFragment"
+            app:destination="@id/trackFragment" />
+    </fragment>
+</navigation>
